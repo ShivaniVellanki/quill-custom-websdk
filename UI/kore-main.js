@@ -57,8 +57,8 @@
         const koreBot = koreBotChat();      // returns the controller
 
         /*────────────────────  5 • EXPOSE FOR OTHER SCRIPTS ────────────────────*/
-        // window.koreBot     = koreBot;
-        // window.koreChatCfg = chatConfig;
+        window.koreBot     = koreBot;
+        window.koreChatCfg = chatConfig;
          //koreBot.show(chatConfig);
         /*────────────────────  6 • BIND LAUNCHER — NO AUTO-SHOW ────────────────────*/
         $('.openChatWindow').on('click', () => {
