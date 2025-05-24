@@ -63,7 +63,7 @@
         chatConfig.botOptions.assertionFn=assertion;
         chatConfig.botOptions.jwtgrantSuccessCB = onJWTGrantSuccess;
         var koreBot = koreBotChat();
-        koreBot.show(chatConfig);
+        // koreBot.show(chatConfig);
         $('.openChatWindow').click(function () {
             koreBot.show(chatConfig);
         });

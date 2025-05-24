@@ -407,7 +407,7 @@
     width: 100%;
     height: 100%;
     z-index: 1020;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 1);
     display: none;
 }
 
@@ -3028,10 +3028,17 @@
 /* iframe modal ends here */
 .kore-chat-window .lang-selector{
     top: 15px;
-    background: white;
+    background: grey;
     border: 1px solid #eee;
     border-radius: 5px;
 }
 #kr_chatContainer{
     display: none;/*remove this minimizeMode false*/
 }
+
+#koreChatAvatar,
+.kore-chat-window {
+  right: auto !important;
+  left: 20px !important;
+}
+
