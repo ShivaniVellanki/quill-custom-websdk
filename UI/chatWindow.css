@@ -38,7 +38,7 @@
     /* Bot Header Variables */
 
     --sdk-chat-window-header-bg:#FFFFFF;
-    --sdk-chat-window-header-font-clr:#26344a;
+    --sdk-chat-window-header-font-clr:#4a3026;
     --sdk-chat-window-header-border-clr:#e5e8ec;
     
 
@@ -407,7 +407,7 @@
     width: 100%;
     height: 100%;
     z-index: 1020;
-    background: rgba(255, 255, 255, 1);
+    background: rgba(255, 255, 255, 0.8);
     display: none;
 }
 
@@ -416,7 +416,8 @@
     bottom: 10px;
     right: 10px;
     width: 480px;
-    min-width: 480px;
+    /* min-width: 480px; */
+    min-width: 430px;
     max-height: 90%;
     height: 90%;
     min-height: 200px;
@@ -426,7 +427,7 @@
     box-shadow: var(--sdk-chat-window-box-shadow);
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
-    border-radius: 4px;
+    border-radius: 8px;
     z-index: 1030;
 }
 
@@ -455,8 +456,9 @@
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTNweCIgaGVpZ2h0PSIxNHB4IiB2aWV3Qm94PSIwIDAgMTMgMTQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDUyLjMgKDY3Mjk3KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5yZWxvYWQ8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iQXJ0Ym9hcmQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0zNTcuMDAwMDAwLCAtMjQxLjAwMDAwMCkiIGZpbGw9IiM4QTk1OUYiIHN0cm9rZT0iIzhBOTU5RiI+CiAgICAgICAgICAgIDxnIGlkPSJyZWxvYWQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM1OC4wMDAwMDAsIDI0Mi4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xMC44LDUuMjczNTc2NTggQzEwLjgsMi4zNjU3MTQyIDguMzc3NTg1NzEsMCA1LjQwMDAyMzg3LDAgQzIuNDIyNDYyMDMsMCAwLDIuMzY1NzE0MiAwLDUuMjczNTc2NTggQzAsNS40NDYzMTE0MiAwLjE0MzQwNjM1Myw1LjU4NjM1OTc2IDAuMzIwMjgyOTQyLDUuNTg2MzU5NzYgQzAuNDk3MTU5NTMsNS41ODYzNTk3NiAwLjY0MDU2NTg4Myw1LjQ0NjI4ODEgMC42NDA1NjU4ODMsNS4yNzM1NzY1OCBDMC42NDA1NjU4ODMsMi43MTA2NDc2NSAyLjc3NTY0MjI2LDAuNjI1NTg5NjY4IDUuNCwwLjYyNTU4OTY2OCBDOC4wMjQzNTc3NCwwLjYyNTU4OTY2OCAxMC4xNTk0MzQxLDIuNzEwNjcwOTYgMTAuMTU5NDM0MSw1LjI3MzU3NjU4IEMxMC4xNTk0MzQxLDcuODM2NDU4ODkgOC4wMjQzNTc3NCw5LjkyMTU0MDE4IDUuNCw5LjkyMTU0MDE4IEw0Ljg0NDMyNzI0LDkuOTIxNTQwMTggTDUuNjM4ODc1MzEsOS4wNTI5NzAwMyBDNS43NTY3MzczMyw4LjkyNDE1OTEyIDUuNzQ1MzAyMDYsOC43MjY0MDgxNiA1LjYxMzQwMjYsOC42MTEzMDYgQzUuNDgxNTAzMTMsOC40OTYyMDM4NSA1LjI3ODk4NjcyLDguNTA3Mzk0NjYgNS4xNjExNDg1Nyw4LjYzNjIwNTU2IEw0LjAyNTM1Njg4LDkuODc3ODAyNzYgQzMuODM5NDMyMzUsMTAuMDgxMDU1OSAzLjgzOTQzMjM1LDEwLjM4NzU5MDggNC4wMjUzNTY4OCwxMC41OTA4NDQgTDUuMTYxMTQ4NTcsMTEuODMyNDQxMiBDNS4yMjQ0MzY0NCwxMS45MDE2Mzc3IDUuMzEyMDc0OTgsMTEuOTM2ODQyMSA1LjQwMDExOTM3LDExLjkzNjg0MjEgQzUuNDc2MDYwMDQsMTEuOTM2ODQyMSA1LjU1MjMxMTA2LDExLjkxMDU5MDMgNS42MTM0MDI2LDExLjg1NzM0MDcgQzUuNzQ1MzI1OTQsMTEuNzQyMjM4NiA1Ljc1NjczNzMzLDExLjU0NDQ4NzYgNS42Mzg4NzUzMSwxMS40MTU2NzY3IEw0Ljg0NDMyNzI0LDEwLjU0NzEwNjUgTDUuNCwxMC41NDcxMDY1IEM4LjM3NzU4NTcxLDEwLjU0NzEwNjUgMTAuOCw4LjE4MTM5MjM0IDEwLjgsNS4yNzM1NzY1OCBaIiBpZD0iUGF0aCI+PC9wYXRoPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=);
     top: 2px;
     right: 35px;
-    position: absolute;   
+    position: absolute; 
 }
+
 .kore-chat-window .errorMsg .retry-icon{
     width: 20px;
     height: 20px;
@@ -714,16 +716,31 @@
     line-height: 49px;
     padding: 0 0 0 20px;
     width: 100%;
+    background-color: #2b59f0;
+    border-radius: 8px;
+    /* background-image: url("https://stp2-cdn.inside-graph.com/custom/2-32-Live_chat.png?1747769820136") ; */
 }
 
+.img {
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+    color: white;
+  }
 .kore-chat-window .kore-chat-header .header-title {
     width: 52%;
-    font-size: 16px!important;
+    font-size: 18px!important;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
     float: left;
-}
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+
+ /* .kore-chat-window .kore-chat-header .header-logo {
+    background-image: url("https://stp2-cdn.inside-graph.com/custom/2-32-Live_chat.png?1747769820136") ;
+ } */
+
 
 .kore-chat-window .kore-chat-header .header-title.ui-draggable-handle {
     cursor: move;
@@ -748,15 +765,16 @@
     border: none;
     opacity: 1;
     /* outline: none; */
-    font-size: 30px;
+    /* font-size: 30px; */
     vertical-align: top;
     height: 50px;
     line-height: inherit;
     margin: 0;
     padding: 0 6px;
+    filter: invert(0%) sepia(10%) saturate(0.5) hue-rotate(0deg) brightness(100%) contrast(100);
 }
 
-.kore-chat-window .kore-chat-header .chat-box-controls .reload-btn {
+.kore-chat-window .kore-chat-header .chat-logo {
     margin-top: 0;
     background-size: 16px 16px;
     display: inline-block;
@@ -767,6 +785,7 @@
 @media(max-width: 767px) {
     .kore-chat-window .kore-chat-header .chat-box-controls .expand-btn {
         display: none;
+        color: white;
     }
 }
 
@@ -779,6 +798,7 @@
     height: 18px;
     background-repeat: no-repeat;
     font-size: 14px;
+    color: white;
 }
 
 .kore-chat-window .kore-chat-body {
@@ -787,8 +807,10 @@
     top: 50px;
     bottom: 53px;
     background-color: var(--sdk-chat-window-body-bg);
-    font-family: "Lato", sans-serif;
+    /* font-family: "Lato", sans-serif; */
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 14px;
+    /* font-size: 1em; */
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -806,6 +828,7 @@
     width: 100%;
     overflow-y: auto;
     padding: 20px 20px;
+    /* background-color: rgb(243, 240, 240); */
 }
 
 .kore-chat-window a {
@@ -895,8 +918,10 @@
     line-height: 1.5;
     font-size: 14px;
     background-color: var(--sdk-chat-window-user-bubble-bg);
+    background-color: #e6dcdc;
+    border-radius: 8px;
     color: var(--sdk-chat-window-user-bubble-font-clr);
-    border-radius: var(--sdk-chat-window-user-bubble-shape);
+    /* border-radius: var(--sdk-chat-window-user-bubble-shape); */
     border: 1px solid var(--sdk-chat-window-user-bubble-border-clr);
     position: relative;
     -webkit-animation: message-right ease-in-out 2s forwards;
@@ -933,6 +958,7 @@
 
 .kore-chat-window ul.chat-container li.fromOtherUsers .messageBubble {
     background-color: var(--sdk-chat-window-bot-bubble-bg);
+    background-color: #e6dcdc;;
     color: var(--sdk-chat-window-bot-bubble-font-clr);
     border-radius: var(--sdk-chat-window-bot-bubble-shape);
     border: 1px solid var(--sdk-chat-window-bot-bubble-border-clr);
@@ -944,6 +970,7 @@
     -moz-animation: message-left ease-in-out 2s forwards;
     animation: message-left ease-in-out 2s forwards;
     display: inline-block;
+    border-radius: 8px;
     word-wrap: break-word;
 }
 .kore-chat-window ul.chat-container li.fromOtherUsers.from-agent .messageBubble {
@@ -975,7 +1002,8 @@
     border-top: 1px solid var(--sdk-chat-window-footer-border-clr);
     background: var(--sdk-chat-window-footer-bg);
     color: var(--sdk-chat-window-footer-font-clr);
-    padding: 5px 20px;
+    padding: 10px 20px;
+    background-color: #e8e8f5;
 }
 
 .kore-chat-window .sendBtnCnt .disabled {
@@ -1005,12 +1033,20 @@
     padding: 2px 0;
     outline: none;
     display: block;
-    font-size: 14px;
+    font-size: 16px;
     cursor: text;
-    margin-bottom: 16px;
+    margin-bottom: 5px;
     max-height: 70px;
     overflow-x: hidden;
     overflow-y: auto;
+    color: #4d4e48;
+    background-color: #ffffff;
+    /* border: red; */
+    border: 1px solid blue;
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
 }
 
 .kore-chat-window .kore-chat-footer .chatInputBoxPlaceholder {
@@ -1161,6 +1197,8 @@
 .kore-chat-window .buttonTmplContent .buttonTmplContentHeading.quickReply {
     display: table;
     font-size: 14px;
+    background-color: #e6dcdc;
+    /* font-size: 1em; */
 }
 .kore-chat-window .buttonTmplContent .buttonTmplContentBox a:last-child .buttonTmplContentChild{
     border-radius: 0px 0px 10px 10px;
@@ -2531,6 +2569,7 @@
     display: none;
     transition: all 0.5s ease-in-out;
     opacity: 0;
+    background-color: white;
 }
 
 .kore-chat-window .historyLoadingDiv.showMsg {
@@ -3042,3 +3081,6 @@
   left: 20px !important;
 }
 
+.kore-chat-window {
+  background-color: var(--sdk-chat-window-body-bg, #ffffff);
+}

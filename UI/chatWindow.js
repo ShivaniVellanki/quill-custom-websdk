@@ -3218,33 +3218,13 @@
                     {{/if}} \
                 <div class="attachment"></div> \
                 {{if isTTSEnabled}} \
-                    <div class="sdkFooterIcon ttspeakerDiv ttsOff"> \
-                        <button class="ttspeaker" title="Talk to speak"> \
-                            <span class="ttsSpeakerEnable"></span> \
-                            <span class="ttsSpeakerDisable"></span> \
-                            <span style="display:none;"><audio id="ttspeaker" controls="" autoplay="" name="media"><source src="" type="audio/wav"></audio></span>\
-                        </button> \
-                    </div> \
+                   \
                 {{/if}} \
                 {{if isSpeechEnabled}}\
-                <div class="sdkFooterIcon microphoneBtn"> \
-                    <button class="notRecordingMicrophone" title="Microphone On"> \
-                        <i class="microphone"></i> \
-                    </button> \
-                    <button class="recordingMicrophone" title="Microphone Off" > \
-                        <i class="microphone"></i> \
-                        <span class="recordingGif"></span> \
-                    </button> \
-                    <div id="textFromServer"></div> \
-                </div> \
+                    \
                 {{/if}}\
                 {{if showAttachment }} \
-                <div class="sdkFooterIcon"> \
-                    <button class="sdkAttachment attachmentBtn" title="${botMessages.attachmentText}"> \
-                        <i class="paperclip"></i> \
-                    </button> \
-                    <input type="file" name="Attachment" class="filety" id="captureAttachmnts"> \
-                </div> \
+                    \
                 {{/if}} \
                 {{if !(isSendButton)}}<div class="chatSendMsg">${botMessages.entertosend}</div>{{/if}} \
             </div>';
@@ -3257,6 +3237,7 @@
                     <div class="minimized"><span class="messages"></span></div> \
                     <div class="kore-chat-header"> \
                         <div id="botHeaderTitle" aria-labelledby="botHeaderTitle" class="header-title" title="${chatTitle}">${chatTitle}</div> \
+                    \
                         <div class="chat-box-controls"> \
                             {{if botMessages.availableLanguages}}\
                                 <select class="lang-selector" >\

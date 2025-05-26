@@ -22,7 +22,7 @@
 
     botOptions.JWTUrl = "https://mk2r2rmj21.execute-api.us-east-1.amazonaws.com/dev/users/sts";
     botOptions.userIdentity = 'shivani.vellanki@staples.com';// Provide users email id here
-    botOptions.botInfo = { name: "Staples_Reactive", "_id": "st-9480a163-3b46-5034-a63c-800a5e4ae2a1" }; // bot name is case sensitive
+    botOptions.botInfo = { name: "Quill Live chat", "_id": "st-9480a163-3b46-5034-a63c-800a5e4ae2a1" }; // bot name is case sensitive
 
     /* 
     Important Note: These keys are provided here for quick demos to generate JWT token at client side but not for Production environment.
